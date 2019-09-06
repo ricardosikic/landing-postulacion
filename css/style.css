@@ -409,3 +409,38 @@ nav {
 
 /* Section testimonials */
 
+#section-testimonials {
+    position: relative;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#section-testimonials > h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#section-testimonials > .content-testimonials > .sliders {
+    display: block;
+}
+
+#section-testimonials > .content-testimonials > .content-dots {
+    border: 1px solid black;
+    text-align: center;
+    padding-top: .7rem;
+    height: 3rem;
+}
+
+#section-testimonials > .content-testimonials > .content-dots > .dots {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: green;
+    margin-right: .4rem; 
+}
+
+
