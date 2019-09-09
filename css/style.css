@@ -427,8 +427,36 @@ nav {
     display: block;
 }
 
+#section-testimonials > .content-testimonials > .fade {
+    animation: fade 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .2;
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+#section-testimonials > .content-testimonials > .sliders > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+}
+
+#section-testimonials > .content-testimonials > .sliders > p {
+    padding-top: 1rem;
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
 #section-testimonials > .content-testimonials > .content-dots {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     text-align: center;
     padding-top: .7rem;
     height: 3rem;
@@ -436,11 +464,42 @@ nav {
 
 #section-testimonials > .content-testimonials > .content-dots > .dots {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     border-radius: 100%;
     background: green;
     margin-right: .4rem; 
 }
 
+
+/* Section contact */
+
+#section-contact {
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: #f6f6f6;
+}
+
+#section-contact > h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+#section-contact > .content-contact {
+    background: #FFF;
+}
+
+#section-contact > .content-contact > form {
+    padding: 3rem;
+}
+
+#section-contact > .content-contact > label, input {
+    display: block;
+    width: 225px;
+    height: 30px;
+    border: 1px solid blue;
+}
 

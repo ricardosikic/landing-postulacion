@@ -5,13 +5,34 @@ displaySlides(slideIndex);
 
 
 let dot1 = document.getElementById('dots1');
+let dot2 = document.getElementById('dots2');
+let dot3 = document.getElementById('dots3');
+
+
+
+dot1.addEventListener('click', () => next(1));
+dot2.addEventListener('click', () => next1(2));
+dot3.addEventListener('click', () => next2(3));
+
+
+function next(n) {
+    displaySlides(slideIndex = n);
+}
+
+function next1(n) {
+    displaySlides(slideIndex = n);
+}
+
+
+function next2(n) {
+    displaySlides(slideIndex = n);
+}
 
 
 
 function displaySlides(n) {
     let sliders = document.getElementsByClassName('sliders');
-    if (n > sliders.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = sliders.length}
+
     for(i = 0; i < sliders.length; i ++) {
         sliders[i].style.display = 'none';
     }
