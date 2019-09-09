@@ -54,15 +54,22 @@ icon.addEventListener('click', () => {
 });
 
 // sticky nav
-window.onscroll = function() {stickyFunction()};
-console.log(window.onscroll);
 
-let sticky = icon.offsetTop;
-console.log('position ', sticky);
+window.onscroll = () => {
+    stickyFunction()
+};
+// console.log(window.onscroll);
+
+let sticky = icon.offsetTop; // posicion del element con respecto al padre cercano
+// console.log('position ', sticky);
 
 function stickyFunction() {
-if(window.pageYOffset >= sticky) {
-    nav.classList.add('sticky');
-}
-
+    
+    if(window.pageYOffset > sticky) {
+        icon.classList.add('sticky', 'sticky-circle');
+        nav.classList.add('sticky'); 
+    } else {
+        icon.classList.remove('sticky', 'sticky-circle');
+        nav.classList.remove('sticky');
+    }
 }

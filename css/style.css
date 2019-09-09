@@ -58,10 +58,28 @@ header > nav {
     animation: fade .5s;
 }
 
-.sticky {
-    background: red;
+.sticky { 
+    /* cuando el Y > a la posicion se activa por JS */
     position: fixed;
-    top: 0;
+    right: 15px;
+}
+
+.sticky-circle {
+    background: #00d2b5;
+    padding: .3rem;
+    color: #FFF;
+}
+
+.sticky-circle > .bar1, .bar2, .bar3 {
+    background: #FFF;
+}
+
+.sticky-circle > .bar2 {
+    background: #FFF;
+}
+
+.sticky-circle > .bar3 {
+    background: #FFF;
 }
 
 @keyframes fade {
