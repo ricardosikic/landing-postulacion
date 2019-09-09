@@ -3,6 +3,9 @@ let slideIndex = 1;
 // la funcion slideIndex recibe como parametro slideIndex
 displaySlides(slideIndex);
 
+let icon = document.getElementById('nav-icon');
+let nav = document.getElementById('nav');
+
 
 let dot1 = document.getElementById('dots1');
 let dot2 = document.getElementById('dots2');
@@ -40,5 +43,10 @@ function displaySlides(n) {
     sliders[slideIndex - 1].style.display = 'block';
 }
 
+// nav icon
 
-
+icon.addEventListener('click', () => {
+    icon.classList.toggle("change");
+    nav.classList.toggle("icon-class");
+    console.log('click')
+  });
