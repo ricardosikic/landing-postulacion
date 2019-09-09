@@ -3,9 +3,6 @@ let slideIndex = 1;
 // la funcion slideIndex recibe como parametro slideIndex
 displaySlides(slideIndex);
 
-let icon = document.getElementById('nav-icon');
-let nav = document.getElementById('nav');
-
 
 let dot1 = document.getElementById('dots1');
 let dot2 = document.getElementById('dots2');
@@ -45,8 +42,27 @@ function displaySlides(n) {
 
 // nav icon
 
+
+let icon = document.getElementById('nav-icon');
+let nav = document.getElementById('nav');
+
+
 icon.addEventListener('click', () => {
     icon.classList.toggle("change");
     nav.classList.toggle("icon-class");
     console.log('click')
-  });
+});
+
+// sticky nav
+window.onscroll = function() {stickyFunction()};
+console.log(window.onscroll);
+
+let sticky = icon.offsetTop;
+console.log('position ', sticky);
+
+function stickyFunction() {
+if(window.pageYOffset >= sticky) {
+    nav.classList.add('sticky');
+}
+
+}

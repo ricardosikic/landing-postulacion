@@ -58,6 +58,12 @@ header > nav {
     animation: fade .5s;
 }
 
+.sticky {
+    background: red;
+    position: fixed;
+    top: 0;
+}
+
 @keyframes fade {
     from {
         opacity: 5;
