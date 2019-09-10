@@ -662,3 +662,109 @@ header > nav > ul > li > a {
 #section-contact > .content-contact > form > button:hover > * {
     color: black;
 }
+
+
+/** START DESKTOP **/
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    
+    /* Section nav */
+
+    #nav-icon {
+        display: none;
+    }
+
+    header > #nav {
+        padding-top: 0;
+        display: block;
+        position: relative;
+        background: #FFF;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 1rem;
+    }
+
+    header > #nav > ul {
+        padding-bottom: .2rem;
+    }
+    
+    header > #nav > ul > li {
+        display: inline-block;
+        padding-right: .8rem;
+    }
+
+    header > #nav > ul > li > a {
+        color: black;
+        font-size: 1rem;
+    }
+
+    header > #nav > ul > li > a:hover {
+        color: #00d2b5;
+        transition: all .3s;
+    }
+
+    /* Section home */  
+    
+    #section-home > .home-img {
+        width: 50%;
+        max-height: 50%;
+        float: right;
+    }
+
+    #section-home > .content-home {
+        float: left;
+        width: 45%;
+        padding-top: 2rem;
+        /* border: 1px solid black; */
+    }
+    
+    #section-home > .content-home > h1 {
+        font-size: 1.7rem;
+    }
+
+    /* Section features */
+
+    #section-features {
+        background: #f6f6f6;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    
+    #section-features > .content-features > ul {
+        list-style: none;
+        /* border: 1px solid red; */
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 5rem;
+        padding-right: 1rem;
+    }
+    
+    #section-features > .content-features > ul > li {
+        background: #FFF;
+        display: inline-block;
+        width: 45%;
+        height: 250px;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        margin-right: .7rem; 
+    }
+
+    /* Section creative */
+    
+    #section-creative > .img-creative {
+        float: left;
+        width: 50%;
+        height: 60%;
+    }
+
+    #section-creative > .content-creative {
+        float: right;
+        width: 50%;
+    }
+
+    #section-creative > .content-creative > .person-creative {
+        width: 95%;
+    }
+
+}
