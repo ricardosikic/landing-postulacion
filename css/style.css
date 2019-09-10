@@ -787,4 +787,41 @@ header > nav > ul > li > a {
         padding-top: 0;
     }
 
+    /* Section testimonials */
+
+    #section-testimonials {
+        padding-bottom: 2rem;
+    }
+
+    #section-testimonials > .content-testimonials {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /* Section Contact */
+
+    #section-contact > .content-contact > form {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #section-contact > .content-contact > form > input[type=text] {
+        width: 100%;
+    }
+
+    #section-contact > .content-contact > form > input[type=email] {
+        width: 100%;
+    }
+
+    #section-contact > .content-contact > form > textarea {
+        width: 100%;
+    }
+
+    #section-contact > .content-contact > form > button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
 }
