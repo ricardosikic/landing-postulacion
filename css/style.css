@@ -767,4 +767,24 @@ header > nav > ul > li > a {
         width: 95%;
     }
 
+    /* Section about */
+
+    #section-about  > img {
+        float: right;
+        width: 50%;
+        margin-top: 1rem;
+        height: auto;
+    }
+
+    #section-about > .content-about {
+        /* border: 1px solid black; */
+        float: left;
+        width: 47%;
+    }
+
+    #section-about > .content-about > h1 {
+        font-size: 2rem;
+        padding-top: 0;
+    }
+
 }
