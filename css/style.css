@@ -516,6 +516,78 @@ header > nav > ul > li > a {
     color: #FFF;
 }
 
+/* Section blog */
+
+#section-blog {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#section-blog > h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+
+#section-blog > .content-blog > ul {
+    list-style: none;
+    padding-left: 0;
+    /* border: 1px solid black; */
+}
+
+#section-blog > .content-blog > ul > li {
+    /* border: 1px solid black; */
+    width: 100%;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+#section-blog > .content-blog > ul > li > h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+#section-blog > .content-blog > ul > li > ul {
+    padding-left: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+    margin-top: -1rem;
+    font-size: 14px;
+}
+
+#section-blog > .content-blog > ul > li > ul > li {
+    display: inline-block;
+}
+
+span {
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+#section-blog > .content-blog > ul > li > ul > li > a {
+    color: #00d2b5;
+    text-decoration: none;
+}
+
+#section-blog > .content-blog > ul > li > p {
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+    line-height: 22px;
+}
+
+#section-blog > .content-blog > ul > li > a {
+    font-family: 'Montserrat', sans-serif;
+    color: #00d2b5;
+    text-decoration: none;
+}
+
+#section-blog > .content-blog > ul > li > a:hover {
+    color: #00d2b5;
+}
+
+
 /* Section testimonials */
 
 #section-testimonials {
@@ -664,7 +736,7 @@ header > nav > ul > li > a {
 }
 
 
-/** START DESKTOP **/
+/* START DESKTOP */
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
     
